@@ -72,9 +72,9 @@ DEVELOPED BY
 #define MANUAL  2
 
 // Defines which servo type is used
-//#define SERVO_TYPE TPMG90S // Uncomment this line if you are using genuine Tower Pro MG90S servos
+#define SERVO_TYPE TPMG90S // Uncomment this line if you are using genuine Tower Pro MG90S servos
 //#define SERVO_TYPE GENERIC // Uncomment this line if you are using generic servos
-#define SERVO_TYPE MANUAL // Uncomment this line if you are manually configuring your servos in the manual configuration below
+// #define SERVO_TYPE MANUAL // Uncomment this line if you are manually configuring your servos in the manual configuration below
 
 #if  (SERVO_TYPE == TPMG90S)
 #define PWM_HIGH 2400 // Authentic Tower Pro MG90s Servo using 12% Duty Cycle
@@ -96,14 +96,14 @@ DEVELOPED BY
 
 // Declare variables for servo speed control
 #define SERVO_CLOSE_SPEED 175 // set the speed of the servo close function
-#define SERVO_OPEN_SPEED 255 // set the speed of the servo opening recommend set to max speed to aid in lift
+#define SERVO_OPEN_SPEED 200 // set the speed of the servo opening recommend set to max speed to aid in lift
 
 // In Dual Servo Configuration the servos move in opposing directions, so the angles of the servos will be opposite to each other. 
 // Normal Servo range is 0° ~ 180°, for initial setup the range has been adjusted to 20° ~ 160°, this allows for a 20° adjustment at both ends of the servo range.
 // See Helmet tutorial for further information on servo setup.
-#define SERVO1_OPEN_POS 20  // set the open position of servo 1
-#define SERVO2_OPEN_POS 160 // set the open position of servo 2
-#define SERVO1_CLOSE_POS 160 // set the closed position of servo 1
+#define SERVO1_OPEN_POS 42  // set the open position of servo 1
+#define SERVO2_OPEN_POS 127 // set the open position of servo 2
+#define SERVO1_CLOSE_POS 165 // set the closed position of servo 1
 #define SERVO2_CLOSE_POS 20 // set the closed position of servo 2
 
 // If the faceplate is dropping down when open due to centrifugal forces, change the following to false.
